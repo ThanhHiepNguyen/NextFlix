@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/Auth.css">
+   <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/loading.css">
 </head>
 
@@ -84,7 +85,7 @@
               const movie = movies[key];
               if (movie.type === 1) {
                 movieList.innerHTML += `
-                  <a href="xemphimchitiet.html?id=${movie.id}" class="movie-card">
+                  <a href="thongtinphim.html?id=${movie.id}" class="movie-card">
                     <div class="movie-poster" style="background-image: url('${movie.images?.posters || ''}'); background-size: cover;">
                       <div class="play-overlay">▶</div>
                     </div>
@@ -135,6 +136,8 @@
 <!-- Auth Logic -->
 <script src="js/auth.js"></script>
 <script src="js/main.js"></script>
+<script src="js/header.js"></script>
+
 
 </body>
 </html>
